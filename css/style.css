@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  color: white;
+  background: #0a350d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background: #000000ad;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.header-container {
+  /* background-color:darkmagenta; */
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.header-container .logo {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.header-container .logo img {
+  height: 100%;
+}
+
+.search {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.search-container {
+  background-color: #0a350d;
+  height: 60px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  display: flex;
+  overflow: hidden;
+}
+
+.input-container {
+  /* Stretch this div as must as you can in the given space */
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.input-container input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.input-container i {
+  font-size: 20px;
+  margin-left: 25px;
+}
+
+.button-container {
+  background-color: #3060ff;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button-container:hover {
+  background: #5a81ff;
+}
+
+.jobs-list {
+  background-color: #0a350d;
+  height: 100vh;
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+}
+
+.jobs-list h1 {
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+.jobs-container {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background: #0a350d;
+}
+
+.job-tile {
+  background-color: #0a350d;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #fff;
+  padding: 30px;
+  /* transform is the property argument */
+  transition: transform 0.2s;
+}
+
+.job-tile:hover {
+  /* Grows container to that value */
+  transform: scale(1.05);
+  box-shadow: 0px 0px 14px 2px rgba(187, 187, 187, 0.75);
+}
+
+.top {
+  /* background-color: rgb(127, 136, 255); */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.rolename {
+  margin: 20px 0px;
+}
+
+.rolename span {
+  font-size: 22px;
+}
+
+.description {
+  height: 105px;
+  /* cuts out any text that overflows */
+  /* And pushes button to the buttom */
+  flex-grow: 1;
+  overflow: hidden;
+  font-size: 18px;
+  color: #9c99a0;
+}
+
+.buttons {
+  /* background-color: pink; */
+  color: black;
+  margin-top: 20px;
+  display: flex;
+  /* Take up most space between them */
+  justify-content: space-between;
+  height: 45px;
+}
+
+.button {
+  /* Button to take up as much space as possible and so we can see the background color */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #f3f2f5;
+  background-color: #1e1e28;
+  font-size: 14px;
+}
+
+.apply-now {
+  color: white;
+  background-color: #3060ff;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 930px) {
+  .jobs-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .jobs-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
