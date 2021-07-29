@@ -4,7 +4,7 @@
 
 Live demo - click on the link 
 
-https://quizzical-minsky-2d1802.netlify.app/ 
+https://gethired-saas-jsbuild.netlify.app/
 
 - This app demontrates of a fully functional SaaS App with jobs/vacanies avaliablity displayed from either JSON file or using API's.
 
