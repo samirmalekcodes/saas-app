@@ -4,7 +4,7 @@
 
 Live demo - click on the link 
 
-https://gethired-saas-jsbuild.netlify.app/
+https://gethired-saas-jsbuild-samircodes.netlify.app/
 
 - This app demontrates of a fully functional SaaS App with jobs/vacanies avaliablity displayed from either JSON file or using API's.
 
